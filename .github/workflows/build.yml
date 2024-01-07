@@ -19,7 +19,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-c-cpp@v2
       - name: Run build-wrapper
         run: |
-          PATH=$PATH:/buildwrapper/build-wrapper-linux-x86:/opt/sonar-scanner/bin
+          PATH="$PATH:/buildwrapper/build-wrapper-linux-x86:/opt/sonar-scanner/bin"
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
