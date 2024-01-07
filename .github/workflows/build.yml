@@ -43,6 +43,6 @@ jobs:
           SONAR_TOKEN: d64fc5ba5a1edd04884ce6f30678222524ef3d0d
         shell: powershell
         run: |
-          SonarScanner.MSBuild.exe begin /k:“Sibiselvan47_testing” /d:sonar.verbose=true
-          SonarScanner.MSBuild.exe end /k:“Sibiselvan47_testing” /d:sonar.verbose=true
+          SonarScanner.MSBuild.exe begin /k:“sibiselvan47” /d:sonar.verbose=true
+          SonarScanner.MSBuild.exe end /k:“sibiselvan47” /d:sonar.verbose=true
 
